@@ -1,11 +1,11 @@
 {
-  "name": "PROJECT_SLUG",
+  "name": "wp-enqueue-util",
   "version": "0.0.0",
   "description": "PROJECT_DESCRIPTION",
-  "author": "AUTHOR_NAME <AUTHOR_URL>",
+  "author": "Michael Novotny <http://manovotny.com>",
   "repository": {
     "type": "git",
-    "url": "PROJECT_GIT"
+    "url": "git://github.com/manovotny/wp-enqueue-util.git"
   },
   "devDependencies": {
     "config": "~1.0.2",

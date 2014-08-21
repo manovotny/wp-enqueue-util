@@ -2,24 +2,24 @@
 /**
  * PROJECT_DESCRIPTION
  *
- * @package PROJECT_PACKAGE
- * @author AUTHOR_NAME <AUTHOR_EMAIL>
+ * @package WP_Enqueue_Util
+ * @author Michael Novotny <manovotny@gmail.com>
  * @license GPL-3.0+
- * @link http://project-url.com
- * @copyright PROJECT_COPYRIGHT
+ * @link https://github.com/manovotny/wp-enqueue-util
+ * @copyright 2014 Michael Novotny
  *
  * @wordpress-plugin
- * Plugin Name: PROJECT_NAME
- * Plugin URI: http://project-url.com
+ * Plugin Name: WP Enqueue Util
+ * Plugin URI: https://github.com/manovotny/wp-enqueue-util
  * Description: PROJECT_DESCRIPTION
  * Version: 0.0.0
- * Author: AUTHOR_NAME
- * Author URI: AUTHOR_URL
+ * Author: Michael Novotny
+ * Author URI: http://manovotny.com
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * Domain Path: /TRANSLATIONS_PATH
- * Text Domain: TRANSLATIONS_DOMAIN
- * GitHub Plugin URI: http://project-url.com
+ * Domain Path: /lang
+ * Text Domain: wp-enqueue-util
+ * GitHub Plugin URI: https://github.com/manovotny/wp-enqueue-util
  */
 
 /* Access

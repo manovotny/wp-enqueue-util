@@ -4,25 +4,25 @@ module.exports = (function () {
 
     return {
         author: {
-            email: 'AUTHOR_EMAIL',
-            name: 'AUTHOR_NAME',
-            url: 'AUTHOR_URL',
+            email: 'manovotny@gmail.com',
+            name: 'Michael Novotny',
+            url: 'http://manovotny.com',
             username: 'AUTHOR_USERNAME'
         },
         project: {
             composer: 'PROJECT_COMPOSER',
-            copyright: 'PROJECT_COPYRIGHT',
+            copyright: '2014 Michael Novotny',
             description: 'PROJECT_DESCRIPTION',
-            git: 'PROJECT_GIT',
-            name: 'PROJECT_NAME',
-            package: 'PROJECT_PACKAGE',
-            slug: 'PROJECT_SLUG',
-            url: 'http://project-url.com',
+            git: 'git://github.com/manovotny/wp-enqueue-util.git',
+            name: 'WP Enqueue Util',
+            package: 'WP_Enqueue_Util',
+            slug: 'wp-enqueue-util',
+            url: 'https://github.com/manovotny/wp-enqueue-util',
             version: '0.0.0'
         },
         translations: {
-            domain: 'TRANSLATIONS_DOMAIN',
-            path: 'TRANSLATIONS_PATH'
+            domain: 'wp-enqueue-util',
+            path: 'lang'
         }
     };
 

@@ -1,4 +1,4 @@
-PROJECT_SLUG
+wp-enqueue-util
 ===
 
 PROJECT_DESCRIPTION

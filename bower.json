@@ -1,19 +1,19 @@
 {
-  "name": "PROJECT_SLUG",
+  "name": "wp-enqueue-util",
   "version": "0.0.0",
   "description": "PROJECT_DESCRIPTION",
   "repository": {
     "type": "git",
-    "url": "PROJECT_GIT"
+    "url": "git://github.com/manovotny/wp-enqueue-util.git"
   },
   "keywords": [
     "wordpress"
   ],
   "authors": [
     {
-      "name": "AUTHOR_NAME",
-      "email": "AUTHOR_EMAIL",
-      "homepage": "AUTHOR_URL"
+      "name": "Michael Novotny",
+      "email": "manovotny@gmail.com",
+      "homepage": "http://manovotny.com"
     }
   ],
   "dependencies": {
