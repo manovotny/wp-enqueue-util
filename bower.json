@@ -1,0 +1,22 @@
+{
+  "name": "PROJECT_SLUG",
+  "version": "0.0.0",
+  "description": "PROJECT_DESCRIPTION",
+  "repository": {
+    "type": "git",
+    "url": "PROJECT_GIT"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "authors": [
+    {
+      "name": "AUTHOR_NAME",
+      "email": "AUTHOR_EMAIL",
+      "homepage": "AUTHOR_URL"
+    }
+  ],
+  "dependencies": {
+    "sass-lint-config": "git://github.com/manovotny/sass-lint-config.git#0.1.0"
+  }
+}

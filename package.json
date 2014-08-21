@@ -1,0 +1,34 @@
+{
+  "name": "PROJECT_SLUG",
+  "version": "0.0.0",
+  "description": "PROJECT_DESCRIPTION",
+  "author": "AUTHOR_NAME <AUTHOR_URL>",
+  "repository": {
+    "type": "git",
+    "url": "PROJECT_GIT"
+  },
+  "devDependencies": {
+    "config": "~1.0.2",
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~1.0.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-curl": "~2.0.2",
+    "grunt-jslint": "~1.1.12",
+    "grunt-phplint": "0.0.5",
+    "grunt-phpunit": "~0.3.4",
+    "grunt-rename": "~0.1.4",
+    "grunt-sass": "~0.14.0",
+    "grunt-scss-lint": "~0.3.3",
+    "grunt-shell": "~1.0.1",
+    "grunt-text-replace": "~0.3.12",
+    "grunt-wp-i18n": "~0.4.7",
+    "load-grunt-config": "~0.13.1",
+    "time-grunt": "~0.4.0"
+  }
+}
