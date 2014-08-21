@@ -31,42 +31,16 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-/* Support
----------------------------------------------------------------------------------- */
-
-wp_enqueue_script( 'TODO' );
-
 /* Libraries
 ---------------------------------------------------------------------------------- */
 
-require_once __DIR__ . '/lib/';
+require_once __DIR__ . '/lib/wp-url-util/wp-url-util.php';
 
 /* Classes
 ---------------------------------------------------------------------------------- */
 
-if ( ! class_exists( 'TODO' ) ) {
+if ( ! class_exists( 'WP_Enqueue_Util' ) ) {
 
-    require_once __DIR__ . '/classes/';
-
-}
-
-/* Widgets
----------------------------------------------------------------------------------- */
-
-if ( ! class_exists( 'TODO' ) ) {
-
-    require_once __DIR__ . '/classes/widgets/';
-
-    add_action( 'widgets_init', create_function( '', 'register_widget("TODO");' ) );
+    require_once __DIR__ . '/classes/class-wp-enqueue-util.php';
 
 }
-
-/* Admin
----------------------------------------------------------------------------------- */
-
-require_once __DIR__ . '/admin/inc/';
-
-/* Includes
----------------------------------------------------------------------------------- */
-
-require_once __DIR__ . '/inc/';

@@ -7,7 +7,6 @@
   "license": "GPL-3.0+",
   "require": {
     "phpunit/phpunit": "4.1.*",
-    "manovotny/wp-file-util": "0.1.1",
-    "manovotny/wp-url-util": "0.1.0"
+    "manovotny/wp-url-util": "0.2.0"
   }
 }
