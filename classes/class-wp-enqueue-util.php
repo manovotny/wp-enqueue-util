@@ -39,6 +39,11 @@ class WP_Enqueue_Util {
     ---------------------------------------------------------------------------------- */
 
     /**
+     * A convenience function for enqueuing scripts.
+     *
+     * Will automatically enqueue concat or minified source, depending on debug configuration.
+     * Will automatically add localization if name and data are provided.
+     *
      * @param WP_Enqueue_Options $options Options to enqueue script with.
      */
     public function enqueue_script( WP_Enqueue_Options $options ) {

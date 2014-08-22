@@ -302,6 +302,11 @@ class WP_Enqueue_Options {
     /* Helpers
     ---------------------------------------------------------------------------------- */
 
+    /**
+     * Determines if the enqueued options have required properties.
+     *
+     * @return boolean If the enqueued options have required properties.
+     */
     public function are_valid() {
 
         return (
