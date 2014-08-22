@@ -170,6 +170,22 @@ class WP_Enqueue_Options {
 
     }
 
+    /* Localization
+    ---------------------------------------------- */
+
+    /**
+     * Convenience accessor for setting all localization properties.
+     *
+     * @param string $localization_name The global localization name to use in JavaScript.
+     * @param mixed $data The data to pass to JavaScript.
+     */
+    public function set_localization( $localization_name, $data ) {
+
+        $this->localization_name = $localization_name;
+        $this->data = $data;
+
+    }
+
     /* Localization Name
     ---------------------------------------------- */
 
