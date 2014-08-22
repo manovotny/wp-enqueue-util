@@ -39,6 +39,12 @@ require_once __DIR__ . '/lib/wp-url-util/wp-url-util.php';
 /* Classes
 ---------------------------------------------------------------------------------- */
 
+if ( ! class_exists( 'WP_Enqueue_Options' ) ) {
+
+    require_once __DIR__ . '/classes/class-wp-enqueue-options.php';
+
+}
+
 if ( ! class_exists( 'WP_Enqueue_Util' ) ) {
 
     require_once __DIR__ . '/classes/class-wp-enqueue-util.php';
