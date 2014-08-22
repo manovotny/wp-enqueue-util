@@ -288,11 +288,12 @@ class WP_Enqueue_Options {
     /**
      * Initialize class.
      */
-    function __construct( $handle, $relative_path, $filename, $dependencies = array(), $version = '' ) {
+    function __construct( $handle, $relative_path, $filename, $filename_debug, $dependencies = array(), $version = '' ) {
 
         $this->handle = $handle;
         $this->relative_path = $relative_path;
         $this->filename = $filename;
+        $this->filename_debug = $filename_debug;
         $this->dependencies = $dependencies;
         $this->version = $version;
 
