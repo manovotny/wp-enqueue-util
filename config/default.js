@@ -43,14 +43,14 @@ module.exports = (function () {
         project: {
             composer: 'manovotny/wp-enqueue-util',
             copyright: date.getFullYear() + ' Michael Novotny',
-            description: 'An enqueuing utility for WordPress.',
+            description: 'A convenient enqueuing utility for WordPress.',
             git: 'git://github.com/manovotny/wp-enqueue-util.git',
             name: 'WP Enqueue Util',
             package: 'WP_Enqueue_Util',
             slug: 'wp-enqueue-util',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-enqueue-util',
-            version: '0.1.1'
+            version: '0.2.0'
         }
     };
 

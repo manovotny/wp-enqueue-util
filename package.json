@@ -1,7 +1,7 @@
 {
   "name": "wp-enqueue-util",
-  "version": "0.1.1",
-  "description": "An enqueuing utility for WordPress.",
+  "version": "0.2.0",
+  "description": "A convenient enqueuing utility for WordPress.",
   "author": "Michael Novotny <http://manovotny.com>",
   "repository": {
     "type": "git",

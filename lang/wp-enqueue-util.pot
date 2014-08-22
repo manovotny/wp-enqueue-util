@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-3.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Enqueue Util 0.1.1\n"
+"Project-Id-Version: WP Enqueue Util 0.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/manovotny/wp-enqueue-util/issues\n"
-"POT-Creation-Date: 2014-08-22 05:40:26+00:00\n"
+"POT-Creation-Date: 2014-08-22 14:46:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,7 @@ msgid "https://github.com/manovotny/wp-enqueue-util"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "An enqueuing utility for WordPress."
+msgid "A convenient enqueuing utility for WordPress."
 msgstr ""
 
 #. Author of the plugin/theme

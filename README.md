@@ -1,4 +1,4 @@
 wp-enqueue-util
 ===
 
-An enqueuing utility for WordPress.
+A convenient enqueuing utility for WordPress.
