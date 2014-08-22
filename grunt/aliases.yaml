@@ -12,23 +12,18 @@ config:
   - rename
 
 build:
-  - clean:js
-  - concat
-  - sass
+  - lint
+  - test
 
 generate:
   - makepot
-  - concat
-  - uglify
 
 update:
   - clean:lib
   - shell:update
   - copy
-  - curl
 
 lint:
-  - jshint
   - jslint
   - phplint
 

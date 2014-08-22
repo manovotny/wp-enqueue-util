@@ -11,12 +11,12 @@ module.exports = function (grunt) {
         },
         update: {
             command: [
+                'npm prune',
                 'npm-check-updates -u',
                 'npm update',
                 'npm update caniuse-db',
-                'npm prune',
-                'bower update',
                 'bower prune',
+                'bower update',
                 'composer update'
             ].join('&&')
         }

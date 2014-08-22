@@ -73,7 +73,7 @@ class WP_Enqueue_Util {
 
         }
 
-        $path = trailingslashit( $relative_path ) . $script;
+        $path = realpath( trailingslashit( $relative_path ) . $script );
         $url = WP_URL_Util::get_instance()->convert_path_to_url( $path );
 
         wp_register_script(
