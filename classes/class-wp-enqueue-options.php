@@ -307,7 +307,7 @@ class WP_Enqueue_Options {
      *
      * @return boolean If the enqueued options have required properties.
      */
-    public function are_valid() {
+    public function have_required_properties() {
 
         return (
             ! empty( $this->handle )

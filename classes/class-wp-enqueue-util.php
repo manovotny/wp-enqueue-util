@@ -62,9 +62,9 @@ class WP_Enqueue_Util {
         $localization_name = $options->get_localization_name();
         $data = $options->get_data();
 
-        if ( ! $options->are_valid() ) {
+        if ( ! $options->have_required_properties() ) {
 
-            trigger_error( 'Trying to enqueue script, but required information is missing.' );
+            trigger_error( 'Trying to enqueue script, but required properties are missing.' );
 
             return;
 
