@@ -12,7 +12,7 @@
  * Plugin Name: WP Enqueue Util
  * Plugin URI: https://github.com/manovotny/wp-enqueue-util
  * Description: An enqueuing utility for WordPress.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Michael Novotny
  * Author URI: http://manovotny.com
  * License: GPL-3.0+

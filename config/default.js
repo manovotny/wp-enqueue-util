@@ -50,7 +50,7 @@ module.exports = (function () {
             slug: 'wp-enqueue-util',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-enqueue-util',
-            version: '0.1.0'
+            version: '0.1.1'
         }
     };
 
