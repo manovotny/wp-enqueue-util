@@ -1,7 +1,7 @@
 {
   "name": "wp-enqueue-util",
-  "version": "0.0.0",
-  "description": "PROJECT_DESCRIPTION",
+  "version": "0.1.0",
+  "description": "An enqueuing utility for WordPress.",
   "repository": {
     "type": "git",
     "url": "git://github.com/manovotny/wp-enqueue-util.git"

@@ -1,7 +1,7 @@
 {
   "name": "manovotny/wp-enqueue-util",
-  "version": "0.0.0",
-  "description": "PROJECT_DESCRIPTION",
+  "version": "0.1.0",
+  "description": "An enqueuing utility for WordPress.",
   "type": "library",
   "homepage": "https://github.com/manovotny/wp-enqueue-util",
   "license": "GPL-3.0+",

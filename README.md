@@ -1,4 +1,4 @@
 wp-enqueue-util
 ===
 
-PROJECT_DESCRIPTION
+An enqueuing utility for WordPress.

@@ -12,13 +12,13 @@ module.exports = (function () {
         project: {
             composer: 'PROJECT_COMPOSER',
             copyright: '2014 Michael Novotny',
-            description: 'PROJECT_DESCRIPTION',
+            description: 'An enqueuing utility for WordPress.',
             git: 'git://github.com/manovotny/wp-enqueue-util.git',
             name: 'WP Enqueue Util',
             package: 'WP_Enqueue_Util',
             slug: 'wp-enqueue-util',
             url: 'https://github.com/manovotny/wp-enqueue-util',
-            version: '0.0.0'
+            version: '0.1.0'
         },
         translations: {
             domain: 'wp-enqueue-util',

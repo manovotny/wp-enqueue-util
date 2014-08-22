@@ -1,6 +1,6 @@
 <?php
 /**
- * PROJECT_DESCRIPTION
+ * An enqueuing utility for WordPress.
  *
  * @package WP_Enqueue_Util
  * @author Michael Novotny <manovotny@gmail.com>
@@ -11,8 +11,8 @@
  * @wordpress-plugin
  * Plugin Name: WP Enqueue Util
  * Plugin URI: https://github.com/manovotny/wp-enqueue-util
- * Description: PROJECT_DESCRIPTION
- * Version: 0.0.0
+ * Description: An enqueuing utility for WordPress.
+ * Version: 0.1.0
  * Author: Michael Novotny
  * Author URI: http://manovotny.com
  * License: GPL-3.0+
