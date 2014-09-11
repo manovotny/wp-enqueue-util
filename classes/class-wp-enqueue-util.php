@@ -48,6 +48,14 @@ class WP_Enqueue_Util {
      */
     public function enqueue_script( WP_Enqueue_Options $options ) {
 
+        if ( ! $options->have_required_properties() ) {
+
+            trigger_error( 'Trying to enqueue script, but required properties are missing.' );
+
+            return;
+
+        }
+
         // Required options.
         $handle = $options->get_handle();
         $relative_path = $options->get_relative_path();
@@ -57,18 +65,11 @@ class WP_Enqueue_Util {
         $filename_debug = $options->get_filename_debug();
         $dependencies = $options->get_dependencies();
         $version = $options->get_version();
+        $in_footer = $options->get_in_footer();
 
         // Localization options.
         $localization_name = $options->get_localization_name();
         $data = $options->get_data();
-
-        if ( ! $options->have_required_properties() ) {
-
-            trigger_error( 'Trying to enqueue script, but required properties are missing.' );
-
-            return;
-
-        }
 
         $script = $filename;
 
@@ -85,7 +86,8 @@ class WP_Enqueue_Util {
             $handle,
             $url,
             $dependencies,
-            $version
+            $version,
+            $in_footer
         );
 
         if ( ! empty( $localization_name ) && ! empty( $data ) ) {

@@ -170,6 +170,38 @@ class WP_Enqueue_Options {
 
     }
 
+    /* In Footer
+    ---------------------------------------------- */
+
+    /**
+     * Whether the script should be enqueued in the head or footer.
+     *
+     * @var boolean
+     */
+    private $in_footer;
+
+    /**
+     * Get accessor method for in footer property.
+     *
+     * @return string
+     */
+    public function get_in_footer() {
+
+        return $this->in_footer;
+
+    }
+
+    /**
+     * Set accessor method for in footer property.
+     *
+     * @param boolean $value
+     */
+    public function set_in_footer( $value ) {
+
+        $this->in_footer = $value;
+
+    }
+
     /* Localization
     ---------------------------------------------- */
 
@@ -288,7 +320,7 @@ class WP_Enqueue_Options {
     /**
      * Initialize class.
      */
-    function __construct( $handle, $relative_path, $filename, $filename_debug, $dependencies = array(), $version = '' ) {
+    function __construct( $handle, $relative_path, $filename, $filename_debug, $dependencies = array(), $version = '', $in_footer = false ) {
 
         $this->handle = $handle;
         $this->relative_path = $relative_path;
@@ -296,6 +328,7 @@ class WP_Enqueue_Options {
         $this->filename_debug = $filename_debug;
         $this->dependencies = $dependencies;
         $this->version = $version;
+        $this->in_footer = $in_footer;
 
     }
 
