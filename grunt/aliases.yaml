@@ -12,27 +12,24 @@ config:
   - rename
 
 build:
+  - clean
   - lint
   - test
 
-generate:
-  - makepot
-
 update:
-  - clean:lib
   - shell:update
-  - copy
+  - curl
+  - build
 
 lint:
-  - jslint
+  - jshint
   - phplint
 
 test:
   - phpunit
 
 release:
-  - lint
-  - test
   - build
   - replace:project_version
-  - generate
+  - replace:update_project
+  - shell:release

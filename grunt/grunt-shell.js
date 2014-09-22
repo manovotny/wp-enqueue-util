@@ -9,6 +9,9 @@ module.exports = function (grunt) {
                 'composer install'
             ].join('&&')
         },
+        release: {
+            command: 'composer dump-autoload --optimize'
+        },
         update: {
             command: [
                 'npm prune',

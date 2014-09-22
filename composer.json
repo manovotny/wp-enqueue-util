@@ -3,10 +3,39 @@
     "version": "1.0.0",
     "description": "A convenient enqueuing utility for WordPress.",
     "type": "library",
-    "homepage": "https://github.com/manovotny/wp-enqueue-util",
+    "authors": [
+        {
+            "name": "Michael Novotny",
+            "email": "manovotny@gmail.com",
+            "homepage": "http://manovotny.com",
+            "role": "Developer"
+        }
+    ],
     "license": "GPL-3.0+",
+    "keywords": [
+        "css",
+        "enqueue",
+        "javascript",
+        "scripts",
+        "wordpress"
+    ],
     "require": {
-        "phpunit/phpunit": "4.1.*",
-        "manovotny/wp-url-util": "0.3.0"
+        "manovotny/wp-url-util": "1.0.0"
+    },
+    "require-dev": {
+        "manovotny/wp-phpunit-helpers": "0.1.0",
+        "phpunit/phpunit": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/phpunit",
+            "vendor/sebastian",
+            "vendor/symfony"
+        ]
     }
 }

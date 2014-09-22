@@ -1,12 +1,6 @@
 <?php
 /**
- * A convenient enqueuing utility for WordPress.
- *
  * @package WP_Enqueue_Util
- * @author Michael Novotny <manovotny@gmail.com>
- * @license GPL-3.0+
- * @link https://github.com/manovotny/wp-enqueue-util
- * @copyright 2014 Michael Novotny
  *
  * @wordpress-plugin
  * Plugin Name: WP Enqueue Util
@@ -31,22 +25,15 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-/* Libraries
+/* Composer
 ---------------------------------------------------------------------------------- */
 
-require_once __DIR__ . '/lib/wp-url-util/wp-url-util.php';
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
-/* Classes
----------------------------------------------------------------------------------- */
-
-if ( ! class_exists( 'WP_Enqueue_Options' ) ) {
-
-    require_once __DIR__ . '/classes/class-wp-enqueue-options.php';
+    require __DIR__ . '/vendor/autoload.php';
 
 }
 
-if ( ! class_exists( 'WP_Enqueue_Util' ) ) {
+/* Initialization
+---------------------------------------------------------------------------------- */
 
-    require_once __DIR__ . '/classes/class-wp-enqueue-util.php';
-
-}
