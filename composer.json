@@ -1,12 +1,12 @@
 {
-  "name": "manovotny/wp-enqueue-util",
-  "version": "1.0.0",
-  "description": "A convenient enqueuing utility for WordPress.",
-  "type": "library",
-  "homepage": "https://github.com/manovotny/wp-enqueue-util",
-  "license": "GPL-3.0+",
-  "require": {
-    "phpunit/phpunit": "4.1.*",
-    "manovotny/wp-url-util": "0.3.0"
-  }
+    "name": "manovotny/wp-enqueue-util",
+    "version": "1.0.0",
+    "description": "A convenient enqueuing utility for WordPress.",
+    "type": "library",
+    "homepage": "https://github.com/manovotny/wp-enqueue-util",
+    "license": "GPL-3.0+",
+    "require": {
+        "phpunit/phpunit": "4.1.*",
+        "manovotny/wp-url-util": "0.3.0"
+    }
 }

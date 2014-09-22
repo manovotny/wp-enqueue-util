@@ -1,19 +1,19 @@
 {
-  "name": "wp-enqueue-util",
-  "version": "1.0.0",
-  "description": "A convenient enqueuing utility for WordPress.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/manovotny/wp-enqueue-util.git"
-  },
-  "keywords": [
-    "wordpress"
-  ],
-  "authors": [
-    {
-      "name": "Michael Novotny",
-      "email": "manovotny@gmail.com",
-      "homepage": "http://manovotny.com"
-    }
-  ]
+    "name": "wp-enqueue-util",
+    "version": "1.0.0",
+    "description": "A convenient enqueuing utility for WordPress.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/manovotny/wp-enqueue-util.git"
+    },
+    "keywords": [
+        "wordpress"
+    ],
+    "authors": [
+        {
+            "name": "Michael Novotny",
+            "email": "manovotny@gmail.com",
+            "homepage": "http://manovotny.com"
+        }
+    ]
 }
