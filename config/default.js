@@ -25,7 +25,7 @@ module.exports = (function () {
             slug: 'wp-enqueue-util',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-enqueue-util',
-            version: '1.0.0'
+            version: '1.1.0'
         }
     };
 
