@@ -319,6 +319,14 @@ class WP_Enqueue_Options {
 
     /**
      * Initialize class.
+     *
+     * @param string $handle File handle.
+     * @param string $relative_path Relative path to file.
+     * @param string $filename Filename to load.
+     * @param string $filename_debug Filename to load when debugging.
+     * @param array $dependencies File dependencies
+     * @param string $version File version.
+     * @param boolean $in_footer Whether to load the file in the head or the footer.
      */
     function __construct( $handle, $relative_path, $filename, $filename_debug, $dependencies = array(), $version = '', $in_footer = false ) {
 
