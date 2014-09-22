@@ -103,4 +103,51 @@ class WP_Enqueue_Util {
         wp_enqueue_script( $handle );
 
     }
+
+    /**
+     * A convenience function for enqueuing styles.
+     *
+     * Will automatically enqueue compiled or minified source, depending on debug configuration.
+     *
+     * @param WP_Enqueue_Options $options Options to enqueue styles with.
+     */
+    public function enqueue_style( WP_Enqueue_Options $options ) {
+
+        if ( ! $options->have_required_properties() ) {
+
+            trigger_error( 'Trying to enqueue style, but required properties are missing.' );
+
+            return;
+
+        }
+
+        // Required options.
+        $handle = $options->get_handle();
+        $relative_path = $options->get_relative_path();
+        $filename = $options->get_filename();
+
+        // Optional options.
+        $filename_debug = $options->get_filename_debug();
+        $dependencies = $options->get_dependencies();
+        $version = $options->get_version();
+
+        $style = $filename;
+
+        if ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG && ! empty( $filename_debug ) ) {
+
+            $style = $filename_debug;
+
+        }
+
+        $path = realpath( trailingslashit( $relative_path ) . $style );
+        $url = WP_URL_Util::get_instance()->convert_path_to_url( $path );
+
+        wp_enqueue_style(
+            $handle,
+            $url,
+            $dependencies,
+            $version
+        );
+
+    }
 }
