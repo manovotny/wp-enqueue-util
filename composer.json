@@ -1,6 +1,6 @@
 {
     "name": "manovotny/wp-enqueue-util",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A convenient enqueuing utility for WordPress.",
     "type": "library",
     "authors": [
@@ -20,7 +20,7 @@
         "wordpress"
     ],
     "require": {
-        "manovotny/wp-url-util": "1.0.1"
+        "manovotny/wp-url-util": "~1.0"
     },
     "require-dev": {
         "manovotny/wp-phpunit-helpers": "0.1.0",
