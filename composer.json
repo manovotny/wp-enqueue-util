@@ -29,6 +29,9 @@
     "autoload": {
         "classmap": [
             "src"
+        ],
+        "files": [
+            "wp-enqueue-util.php"
         ]
     },
     "autoload-dev": {
