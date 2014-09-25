@@ -80,7 +80,7 @@ class WP_Enqueue_Util {
         }
 
         $path = realpath( trailingslashit( $relative_path ) . $script );
-        $url = WP_URL_Util::get_instance()->convert_path_to_url( $path );
+        $url = WP_Url_Util::get_instance()->convert_path_to_url( $path );
 
         wp_register_script(
             $handle,
@@ -140,7 +140,7 @@ class WP_Enqueue_Util {
         }
 
         $path = realpath( trailingslashit( $relative_path ) . $style );
-        $url = WP_URL_Util::get_instance()->convert_path_to_url( $path );
+        $url = WP_Url_Util::get_instance()->convert_path_to_url( $path );
 
         wp_enqueue_style(
             $handle,
