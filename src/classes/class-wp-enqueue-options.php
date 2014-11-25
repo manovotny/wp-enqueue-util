@@ -250,6 +250,38 @@ class WP_Enqueue_Options {
 
     }
 
+    /* Media
+    ---------------------------------------------- */
+
+    /**
+     * Media for which the styles are for.
+     *
+     * @var string
+     */
+    private $media = 'all';
+
+    /**
+     * Get accessor method for media property.
+     *
+     * @return string
+     */
+    public function get_media() {
+
+        return $this->media;
+
+    }
+
+    /**
+     * Set accessor method for media property.
+     *
+     * @param string $value
+     */
+    public function set_media( $value ) {
+
+        $this->media = $value;
+
+    }
+
     /* Relative Path
     ---------------------------------------------- */
 

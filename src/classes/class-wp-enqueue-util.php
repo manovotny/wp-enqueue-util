@@ -130,6 +130,7 @@ class WP_Enqueue_Util {
         $filename_debug = $options->get_filename_debug();
         $dependencies = $options->get_dependencies();
         $version = $options->get_version();
+        $media = $options->get_media();
 
         $style = $filename;
 
@@ -146,7 +147,8 @@ class WP_Enqueue_Util {
             $handle,
             $url,
             $dependencies,
-            $version
+            $version,
+            $media
         );
 
     }
