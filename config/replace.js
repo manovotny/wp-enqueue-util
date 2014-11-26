@@ -7,7 +7,7 @@ module.exports = (function () {
             email: 'manovotny@gmail.com',
             name: 'Michael Novotny',
             url: 'http://manovotny.com',
-            username: 'AUTHOR_USERNAME'
+            username: 'manovotny'
         },
         project: {
             composer: 'PROJECT_COMPOSER',
