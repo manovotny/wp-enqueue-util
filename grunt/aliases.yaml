@@ -27,7 +27,7 @@ upgrade:
 #----------------------------------------------------------------------------------
 
 build:
-  - clean
+  - clean:build
   - curl
   - lint
   - test
@@ -47,3 +47,9 @@ release:
   - build
   - replace:project_version
   - replace:update_project
+
+# Deploy
+#----------------------------------------------------------------------------------
+
+deploy:
+  - clean:deploy
