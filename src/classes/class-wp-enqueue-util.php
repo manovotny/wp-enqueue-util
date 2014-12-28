@@ -71,20 +71,11 @@ class WP_Enqueue_Util {
         $localization_name = $options->get_localization_name();
         $data = $options->get_data();
 
-        $script = $filename;
-
-        if ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG && ! empty( $filename_debug ) ) {
-
-            $script = $filename_debug;
-
-        }
-
-        $path = realpath( trailingslashit( $relative_path ) . $script );
-        $url = WP_Url_Util::get_instance()->convert_absolute_path_to_url( $path );
+        $source = $this->get_source_to_enqueue( $relative_path, $filename, $filename_debug );
 
         wp_register_script(
             $handle,
-            $url,
+            $source,
             $dependencies,
             $version,
             $in_footer
@@ -132,24 +123,40 @@ class WP_Enqueue_Util {
         $version = $options->get_version();
         $media = $options->get_media();
 
-        $style = $filename;
-
-        if ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG && ! empty( $filename_debug ) ) {
-
-            $style = $filename_debug;
-
-        }
-
-        $path = realpath( trailingslashit( $relative_path ) . $style );
-        $url = WP_Url_Util::get_instance()->convert_absolute_path_to_url( $path );
+        $source = $this->get_source_to_enqueue( $relative_path, $filename, $filename_debug );
 
         wp_enqueue_style(
             $handle,
-            $url,
+            $source,
             $dependencies,
             $version,
             $media
         );
 
     }
+
+    /**
+     * Gets the source to enqueue based upon whether or not debugging is enabled.
+     *
+     * @param $relative_path string Relative path to the potential files to enqueue.
+     * @param $filename string Filename of the production file to enqueue.
+     * @param $filename_debug string Filename of the file to enqueue when debugging.
+     * @return string A url to the source to enqueue.
+     */
+    public function get_source_to_enqueue( $relative_path, $filename, $filename_debug ) {
+
+        $source_file = $filename;
+
+        if ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG && !empty( $filename_debug ) ) {
+
+            $source_file = $filename_debug;
+
+        }
+
+        $path = realpath( trailingslashit( $relative_path ) . $source_file );
+
+        return WP_Url_Util::get_instance()->convert_absolute_path_to_url( $path );
+
+    }
+
 }
