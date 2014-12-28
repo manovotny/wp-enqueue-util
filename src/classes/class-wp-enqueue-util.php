@@ -143,7 +143,7 @@ class WP_Enqueue_Util {
      * @param $filename_debug string Filename of the file to enqueue when debugging.
      * @return string A url to the source to enqueue.
      */
-    public function get_source_to_enqueue( $relative_path, $filename, $filename_debug ) {
+    public function get_source_to_enqueue( $relative_path, $filename, $filename_debug = null ) {
 
         $source_file = $filename;
 
