@@ -16,7 +16,7 @@ module.exports = (function () {
             name: 'WP Enqueue Util',
             slug: 'wp-enqueue-util',
             url: 'https://github.com/manovotny/wp-enqueue-util',
-            version: '1.3.0'
+            version: '1.3.1'
         },
         translations: {
             domain: 'wp-enqueue-util',
